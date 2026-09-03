@@ -2,7 +2,7 @@
 
 ## PAIR Assessment Tool
 
-**PAIR — Physical AI Readiness** is an open-source research and decision-support framework for evaluating whether places, systems, institutions, and communities are ready for AI-enabled technologies that act in the physical world.
+**PAIR — Physical AI Readiness** is an open-source research and decision-support framework for evaluating whether places, systems, institutions, and communities are prepared for AI-enabled technologies that act in the physical world.
 
 The public beta product is the **PAIR Assessment Tool**. It organizes readiness across four domains — **Place, Architecture, Institutions, and Returns** — and evaluates those domains through ten readiness dimensions.
 
@@ -10,9 +10,9 @@ The public beta product is the **PAIR Assessment Tool**. It organizes readiness 
 
 ## Why Physical AI Readiness?
 
-AI is moving beyond software and into streets, vehicles, depots, buildings, logistics systems, public space, infrastructure, and everyday operations. Autonomous vehicles are one visible example, but the same transition includes robotics, intelligent logistics, digital twins, connected infrastructure, smart charging, automated facilities, and AI-supported transportation and public-sector operations.
+Physical AI describes AI-enabled systems that perceive, reason, coordinate, or act in physical environments. This includes autonomous vehicles, robotics, intelligent logistics, automated facilities, AI-enabled infrastructure, connected streets and curbs, smart charging, digital twins, and related systems.
 
-Technology readiness and place readiness are not the same thing. A capable automated system may still encounter weak curb management, insufficient charging capacity, unclear governance, limited workforce preparation, fragmented data systems, or low public trust.
+The central premise of PAIR is that **technology readiness and place readiness are not the same thing**. A technically capable system may still fail to scale if the surrounding environment lacks the infrastructure, data architecture, governance, workforce capacity, emergency-response protocols, market conditions, or public trust needed to support deployment.
 
 PAIR is designed to make those conditions visible and actionable.
 
@@ -25,31 +25,31 @@ PAIR stands for:
 - **I — Institutions:** Can we govern, operate, and respond?
 - **R — Returns:** Does deployment create value?
 
-The four PAIR domains are the conceptual structure. The ten dimensions are how those domains are assessed.
+The four domains are the conceptual structure. The ten dimensions are the measurement framework.
 
-### Place
+### P — Place
 
-1. Physical Infrastructure
-2. Curb, Access & Public Realm
-3. Energy, Charging & Depot Capacity
+1. **Physical Infrastructure**
+2. **Curb, Access & Public Realm**
+3. **Energy, Charging & Depot Capacity**
 
-### Architecture
+### A — Architecture
 
-4. Digital & Data Infrastructure
-5. Mobility & System Integration
+4. **Digital & Data Infrastructure**
+5. **Mobility & System Integration**
 
-### Institutions
+### I — Institutions
 
-6. Governance & Institutional Capacity
-7. Workforce & Operations
-8. Safety, Emergency Response & Resilience
+6. **Governance & Institutional Capacity**
+7. **Workforce & Operations**
+8. **Safety, Emergency Response & Resilience**
 
-### Returns
+### R — Returns
 
-9. Public Trust, Equity & Community Acceptance
-10. Economic Development & Deployment Viability
+9. **Public Trust, Equity & Community Acceptance**
+10. **Economic Development & Deployment Viability**
 
-The assessment logic is:
+The framework follows this logic:
 
 **PAIR Domain → Readiness Dimension → Evidence → Maturity Assessment → Gap → Action → Deployment → Evaluation**
 
@@ -65,41 +65,29 @@ PAIR currently uses a five-point maturity scale:
 | 4 | Deployment-Ready | Policies, infrastructure, people, and operating systems can support sustained deployment. |
 | 5 | Adaptive & Scalable | The system can deploy, measure outcomes, learn, adapt, and scale. |
 
-The beta produces a **PAIR Readiness Profile**, not a validated composite index. It may show an unweighted overall maturity value for context, but this should not be interpreted as a formal PAIR Index score.
-
-## PAIR Assessment Tool
-
-The beta tool is intended to support self-assessment and structured discussion for users such as:
-
-- cities, counties, and public agencies;
-- transit agencies;
-- universities and campuses;
-- airports and ports;
-- developers and master-planned communities;
-- economic-development organizations;
-- mobility and logistics companies;
-- consulting and research organizations.
-
-Potential use cases include autonomous vehicles, curb and pickup/drop-off management, campus automation, transit integration, robotics and logistics, Physical AI economic development, charging and depot operations, and connected infrastructure.
+The beta produces a **PAIR Readiness Profile**, not a validated composite index. A future **PAIR Index** should only be introduced after repeated application, evidence testing, scoring refinement, and validation.
 
 ## Research Foundations
 
-PAIR draws conceptually from existing work on AI readiness, risk governance, autonomous mobility, urban design, digital infrastructure, workforce transition, and public-value assessment. Relevant foundations include:
+PAIR draws conceptually from established work on AI risk governance, government AI readiness, autonomous mobility, urban design, curb management, infrastructure integration, workforce transition, and public-value assessment.
 
-- National Institute of Standards and Technology, *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*.
-- Oxford Insights, *Government AI Readiness Index*.
-- National Association of City Transportation Officials, *Blueprint for Autonomous Urbanism*.
-- Open Mobility Foundation standards and specifications for mobility and curb data.
-- U.S. Department of Transportation, *Automated Vehicles Comprehensive Plan*.
-- World Economic Forum work on Physical AI and workforce transformation.
-- Riggs, W., Appleyard, B., & Johnson, M. (2020). “A design framework for livable streets in the era of autonomous vehicles.” *Urban, Planning and Transport Research, 8*(1), 125–137. https://doi.org/10.1080/21650020.2020.1749123
-- Zarghampour, H., et al. (2022). Research on city readiness for connected and autonomous vehicles using multi-stakeholder and multi-criteria assessment. *Transport Policy*.
+Key verified foundations include:
 
-These sources inform PAIR; they should not be interpreted as independently validating the PAIR methodology.
+- National Institute of Standards and Technology. (2023). *Artificial Intelligence Risk Management Framework (AI RMF 1.0).* https://doi.org/10.6028/NIST.AI.100-1
+- Oxford Insights. (2024). *Government AI Readiness Index 2024.* https://oxfordinsights.com/ai-readiness/
+- National Association of City Transportation Officials. (2020). *Blueprint for Autonomous Urbanism: Second Edition.* https://nacto.org/publication/blueprint-for-autonomous-urbanism/
+- U.S. Department of Transportation. (2021). *Automated Vehicles Comprehensive Plan.* https://www.transportation.gov/av/avcp
+- Open Mobility Foundation. (2022). *Curb Data Specification 1.0.* https://www.openmobilityfoundation.org/its-official-curb-data-specification-cds-version-1-0/
+- World Economic Forum. (2025). *Physical AI: Powering the New Age of Industrial Operations.* https://www.weforum.org/publications/physical-ai-powering-the-new-age-of-industrial-operations/
+- Crute, J., Riggs, W., Chapin, T., & Stevens, L. (2018). *Planning for Autonomous Mobility* (PAS Report 592). American Planning Association. https://www.planning.org/publications/report/9157605/
+- Riggs, W., Appleyard, B., & Johnson, M. (2020). A design framework for livable streets in the era of autonomous vehicles. *Urban, Planning and Transport Research, 8*(1), 125–137. https://doi.org/10.1080/21650020.2020.1749123
+- Appleyard, B., & Riggs, W. (2023). Designing for street livability in the era of driverless cars. *Transportation Research Interdisciplinary Perspectives, 21*, 100868. https://doi.org/10.1016/j.trip.2023.100868
+- Schlossberg, M., Riggs, W., Millard-Ball, A., & Shay, E. (2018). *Rethinking the Street in an Era of Driverless Cars.* Urbanism Next. https://www.urbanismnext.org/resources/rethinking-the-street-in-an-era-of-driverless-cars
+- Riggs, W. (2024). *Designing the Future Curb: Eight Visions for Adaptive Urban Edges.* SSRN. https://doi.org/10.2139/ssrn.5283742
+
+These sources inform PAIR; they do not independently validate the methodology. A curated reference list is maintained in [`docs/REFERENCES.md`](docs/REFERENCES.md).
 
 ## Naming Convention
-
-Use the following naming consistently across code, documentation, publications, and deployment:
 
 - **Repository:** `physical-AI-readiness`
 - **Framework:** **PAIR — Physical AI Readiness**
@@ -110,39 +98,15 @@ Use the following naming consistently across code, documentation, publications, 
 
 Do not describe the current beta as a validated index.
 
-See [`docs/NAMING.md`](docs/NAMING.md) for the full naming and terminology guide.
+See [`docs/NAMING.md`](docs/NAMING.md).
 
-## Repository Structure
+## Methodology
 
-The intended application architecture is:
-
-```text
-/app
-  /page.tsx
-  /assessment/page.tsx
-  /results/page.tsx
-  /methodology/page.tsx
-
-/components
-/lib
-/public
-/docs
-```
-
-Assessment questions, scoring logic, maturity mappings, and recommendations should remain configuration-driven and separate from presentation components.
+The first phase emphasizes a readiness profile across ten dimensions rather than collapsing complex evidence into a single score. See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) for the full framework.
 
 ## Development
 
-The beta is intended to use:
-
-- Next.js
-- TypeScript
-- Tailwind CSS
-- App Router
-- local browser state
-- Vercel deployment
-
-No database, authentication, payment system, analytics service, or LLM dependency is required for the first beta.
+The intended beta stack is Next.js, TypeScript, Tailwind CSS, local browser state, and Vercel deployment. The methodology should remain configuration-driven and separate from presentation components.
 
 Once the app code is present:
 
@@ -150,49 +114,6 @@ Once the app code is present:
 npm install
 npm run dev
 ```
-
-## Deployment
-
-The recommended Vercel project slug is:
-
-```text
-physical-ai-readiness
-```
-
-Recommended page title:
-
-```text
-PAIR Assessment Tool | Physical AI Readiness
-```
-
-## Methodology
-
-The methodology is intentionally transparent and developmental. The first phase emphasizes a readiness profile across ten dimensions rather than collapsing complex evidence into a single score.
-
-As PAIR is applied across additional cities, campuses, developments, and deployment settings, later versions may add:
-
-- multiple indicators per dimension;
-- evidence-confidence scoring;
-- use-case-specific weighting;
-- expert review;
-- longitudinal reassessment;
-- peer benchmarking;
-- methodological validation;
-- a future **PAIR Index**.
-
-See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) for more detail.
-
-## Roadmap
-
-The near-term goal is to validate the framework through real-world use before adding unnecessary software complexity.
-
-See [`docs/ROADMAP.md`](docs/ROADMAP.md).
-
-## Contributing
-
-This project is open source and welcomes thoughtful contributions from researchers, practitioners, cities, technologists, planners, designers, mobility operators, workforce organizations, and others working on the real-world deployment of AI-enabled systems.
-
-Methodological changes should be documented clearly and should distinguish between conceptual additions, scoring changes, empirical validation, and UI changes.
 
 ## License
 
