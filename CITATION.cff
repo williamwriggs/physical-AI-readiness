@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use PAIR — Physical AI Readiness in research or practice, please cite this repository."
+title: "PAIR — Physical AI Readiness"
+type: software
+authors:
+  - family-names: "Riggs"
+    given-names: "William"
+    alias: "Billy Riggs"
+year: 2026
+version: "0.1"
+repository-code: "https://github.com/williamwriggs/physical-AI-readiness"
+license: MIT
+abstract: "An open-source exploratory framework and beta assessment tool for evaluating Physical AI readiness across Place, Architecture, Institutions, and Returns."
+keywords:
+  - physical AI
+  - artificial intelligence
+  - autonomous vehicles
+  - urban technology
+  - readiness assessment
+  - public policy
+  - infrastructure
+  - mobility
+  - robotics
