@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { MaturityScale } from "@/components/MaturityScale";
 import { PairFrameworkVisual } from "@/components/PairFrameworkVisual";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -113,7 +112,7 @@ export default function MethodologyPage() {
         </section>
 
         <section className="method-cta">
-          <div className="shell"><h2>Use the framework. Test the assumptions.</h2><p>The beta is designed for client meetings, workshops, research pilots, and baseline assessments.</p><Link className="button primary" href="/assessment">Start assessment →</Link></div>
+          <div className="shell"><h2>Use the framework. Test the assumptions.</h2><p>The beta is designed for client meetings, workshops, research pilots, and baseline assessments.</p><a className="button primary" href="/assessment">Start assessment →</a></div>
         </section>
       </main>
       <SiteFooter />
