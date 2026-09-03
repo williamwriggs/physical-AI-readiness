@@ -2,58 +2,93 @@
 
 ## PAIR Assessment Tool
 
-An open-source beta framework and assessment tool for evaluating Physical AI readiness across Place, Architecture, Institutions, and Returns.
+**PAIR — Physical AI Readiness** is an open-source research and decision-support framework for evaluating whether places, systems, institutions, and communities are prepared for AI-enabled technologies that act in the physical world.
 
-PAIR helps cities, campuses, public agencies, transit agencies, ports, airports, developers, economic-development organizations, and companies ask a practical question: are the place, systems, institutions, and public-value conditions ready for Physical AI deployment?
+The public beta product is the **PAIR Assessment Tool**. It organizes readiness across **Place, Architecture, Institutions, and Returns** and evaluates those domains through ten readiness dimensions.
 
-Physical AI includes autonomous mobility, robotics, automated logistics, intelligent curbs, connected infrastructure, digital twins, charging and depot systems, and other technologies that perceive, reason, coordinate, or act in the physical world.
+> **Status:** PAIR is an exploratory framework and beta assessment tool. It is not a certification system, regulatory standard, safety determination, or validated comparative index.
 
-## PAIR framework
+## Why Physical AI Readiness?
 
-PAIR organizes ten readiness dimensions inside four domains:
+Physical AI includes autonomous vehicles, robotics, intelligent logistics, automated facilities, AI-enabled infrastructure, connected streets and curbs, smart charging, digital twins, and related systems that perceive, reason, coordinate, or act in physical environments.
 
-- **Place:** Physical Infrastructure; Curb, Access & Public Realm; Energy, Charging & Depot Capacity
-- **Architecture:** Digital & Data Infrastructure; Mobility & System Integration
-- **Institutions:** Governance & Institutional Capacity; Workforce & Operations; Safety, Emergency Response & Resilience
-- **Returns:** Public Trust, Equity & Community Acceptance; Economic Development & Deployment Viability
+Technology readiness and place readiness are not the same thing. A technically capable system may still fail to scale if the surrounding environment lacks the infrastructure, data architecture, governance, workforce capacity, emergency-response protocols, market conditions, or public trust needed to support deployment.
 
-The decision pathway is:
+PAIR is designed to make those conditions visible and actionable.
 
-`PAIR Domain → Readiness Dimension → Evidence → Maturity Assessment → Gap → Action → Deployment → Evaluation`
+## The PAIR Framework
 
-## Maturity scale
+PAIR stands for:
 
-1. Not Ready
-2. Emerging
-3. Pilot-Ready
-4. Deployment-Ready
-5. Adaptive & Scalable
+- **P — Place:** Is the physical environment ready?
+- **A — Architecture:** Can Physical AI connect to the wider system?
+- **I — Institutions:** Can we govern, operate, and respond?
+- **R — Returns:** Does deployment create value?
 
-The tool reports dimension scores, four unweighted domain averages, and a **Preliminary Overall Maturity** calculated as the unweighted mean across all ten dimensions. It does not produce a formal index.
+The four domains are the conceptual structure. The ten dimensions are the measurement framework.
+
+### P — Place
+
+1. **Physical Infrastructure**
+2. **Curb, Access & Public Realm**
+3. **Energy, Charging & Depot Capacity**
+
+### A — Architecture
+
+4. **Digital & Data Infrastructure**
+5. **Mobility & System Integration**
+
+### I — Institutions
+
+6. **Governance & Institutional Capacity**
+7. **Workforce & Operations**
+8. **Safety, Emergency Response & Resilience**
+
+### R — Returns
+
+9. **Public Trust, Equity & Community Acceptance**
+10. **Economic Development & Deployment Viability**
+
+The framework follows this logic:
+
+**PAIR Domain → Readiness Dimension → Evidence → Maturity Assessment → Gap → Action → Deployment → Evaluation**
+
+## Maturity and scoring
+
+PAIR currently uses a five-point maturity scale:
+
+| Score | Maturity level | Interpretation |
+|---:|---|---|
+| 1 | Not Ready | Major gaps exist and ownership or deployment pathways may be unclear. |
+| 2 | Emerging | Some capacity exists, but systems remain incomplete or fragmented. |
+| 3 | Pilot-Ready | Sufficient capacity exists for a bounded deployment with clear oversight. |
+| 4 | Deployment-Ready | Policies, infrastructure, people, and operating systems can support sustained deployment. |
+| 5 | Adaptive & Scalable | The system can deploy, measure outcomes, learn, adapt, and scale. |
+
+The beta reports ten dimension ratings, four unweighted domain averages, and a **Preliminary Overall Maturity** calculated as the unweighted mean across all dimensions. It produces a **PAIR Readiness Profile**, not a formal index. A future **PAIR Index** should only be introduced after repeated application, evidence testing, scoring refinement, and validation.
 
 ## Features
 
 - Guided ten-dimension assessment with evidence notes and confidence ratings
-- Browser-only autosave with no accounts or backend
+- Browser-only autosave with no account or backend required by the application
 - PAIR Readiness Profile with domain summaries, strengths, gaps, and rule-based recommendations
 - JSON import and export
 - Print-friendly results for browser-based PDF export
 - Responsive, keyboard-accessible interface
 - Configuration-driven dimensions, maturity mapping, scoring, and recommendation rules
 
-## Research background
+## Research foundations
 
-PAIR is informed by existing research on AI readiness, autonomous mobility, urban design, governance, infrastructure, workforce, and public-value assessment. Its conceptual foundations include the NIST AI Risk Management Framework, Oxford Insights Government AI Readiness Index, NACTO Blueprint for Autonomous Urbanism, Open Mobility Foundation specifications, the USDOT Automated Vehicles Comprehensive Plan, World Economic Forum work on workforce transition and Physical AI, Riggs, Appleyard, and Johnson (2020), and Jiang, Chen, and Chen (2022).
+PAIR draws conceptually from established work on AI risk governance, government AI readiness, autonomous mobility, urban design, curb management, infrastructure integration, workforce transition, and public-value assessment. These sources inform PAIR; they do not independently validate the methodology.
 
-These sources inform PAIR; they do not directly validate it. See the in-product methodology page for the selected references.
+See the curated [`docs/REFERENCES.md`](docs/REFERENCES.md) and the in-product methodology page for selected references.
 
-## Beta limitations
+## Project documentation
 
-> PAIR is currently an exploratory research and decision-support framework. The PAIR Assessment Tool is not a certification system, regulatory standard, safety assessment, or validated comparative index.
-
-The current scoring structure has not been empirically validated across multiple places or use cases. Ratings are self-reported and should be interpreted alongside evidence and expert review. There is no validated weighting, external data ingestion, city benchmarking, or formal composite index in this beta.
-
-The future PAIR Index is envisioned as a validated benchmarking framework developed through repeated application, expert review, methodological refinement, and comparative evidence.
+- [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) — framework structure and research position
+- [`docs/NAMING.md`](docs/NAMING.md) — naming and terminology rules
+- [`docs/REFERENCES.md`](docs/REFERENCES.md) — verified research foundations
+- [`docs/ROADMAP.md`](docs/ROADMAP.md) — development and validation roadmap
 
 ## Installation
 
@@ -82,27 +117,12 @@ Application routes use the Next.js App Router:
 - `/results` — browser-generated readiness profile
 - `/methodology` — framework, research position, references, and roadmap
 
-## Testing
-
-The lightweight Node test suite covers maturity thresholds, domain and overall calculations, ranking of strengths and gaps, recommendation selection, JSON export, and JSON import normalization.
-
-```bash
-npm test
-```
-
-## Deploying to Vercel
-
-1. Push this repository to GitHub, GitLab, or Bitbucket.
-2. Import it into Vercel.
-3. Keep the detected framework as Next.js and the default build settings.
-4. Deploy. No environment variables or external services are required.
-
-Recommended Vercel project slug: `physical-ai-readiness`.
+The test suite covers maturity thresholds, domain and overall calculations, ranking of strengths and gaps, recommendation selection, JSON export, and JSON import normalization.
 
 ## Methodology customization
 
-- Edit the ten domains, questions, definitions, organization types, and use cases in `lib/assessment-data.ts`.
-- Edit the five maturity labels and average-to-level thresholds in `lib/maturity.ts`.
+- Edit domains, questions, definitions, organization types, and use cases in `lib/assessment-data.ts`.
+- Edit maturity labels and thresholds in `lib/maturity.ts`.
 - Edit score-based action rules in `lib/recommendations.ts`.
 - Edit aggregation and export behavior in `lib/scoring.ts`.
 
@@ -110,33 +130,14 @@ Keeping methodology logic outside the UI makes the framework easier to review, f
 
 ## Contributing
 
-Issues and pull requests are welcome. For substantive methodology changes, explain the research basis, intended use case, expected effect on interpretation, and whether migration of saved JSON is required. Please run lint, tests, and a production build before submitting a pull request.
+Issues and pull requests are welcome. For substantive methodology changes, explain the research basis, intended use case, expected effect on interpretation, and whether migration of saved JSON is required. Run lint, tests, and a production build before submitting a pull request.
 
-## Roadmap
+## Citation
 
-### v0.2
+Until a formal publication or DOI is available, please cite the project as:
 
-- Multiple questions per dimension
-- Evidence validation
-- Custom use-case profiles
-- Optional dimension weighting
-
-### v0.3
-
-- Saved assessments
-- Longitudinal reassessment
-- Expert-review mode
-- Downloadable branded reports
-
-### v1.0
-
-- Validated PAIR Index
-- Peer benchmarks and comparisons
-- Longitudinal benchmarking
-- Licensed organizational deployments
-
-These items describe future research and product directions; they are not included in the current beta.
+> Riggs, W. (2026). *PAIR — Physical AI Readiness: Open-source assessment framework and beta tool*. GitHub repository: `williamwriggs/physical-AI-readiness`.
 
 ## License
 
-MIT © 2026 PAIR contributors. See [LICENSE](LICENSE).
+MIT License. See [`LICENSE`](LICENSE).
