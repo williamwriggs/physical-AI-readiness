@@ -2,11 +2,13 @@
 
 ## PAIR Assessment Tool
 
-**PAIR — Physical AI Readiness** is an open-source research and decision-support framework for evaluating whether places, systems, institutions, and communities are prepared for AI-enabled technologies that act in the physical world.
+**PAIR — Physical AI Readiness** is a source-available research and decision-support framework for evaluating whether places, systems, institutions, and communities are prepared for AI-enabled technologies that act in the physical world.
 
 The public beta product is the **PAIR Assessment Tool**. It organizes readiness across **Place, Architecture, Institutions, and Returns** and evaluates those domains through ten readiness dimensions.
 
 > **Status:** PAIR is an exploratory framework and beta assessment tool. It is not a certification system, regulatory standard, safety determination, or validated comparative index.
+
+> **License:** Source-available for evaluation only. Commercial use requires a separate written license. See [`LICENSE`](LICENSE) and [`COMMERCIAL.md`](COMMERCIAL.md).
 
 ## Why Physical AI Readiness?
 
@@ -89,6 +91,7 @@ See the curated [`docs/REFERENCES.md`](docs/REFERENCES.md) and the in-product me
 - [`docs/NAMING.md`](docs/NAMING.md) — naming and terminology rules
 - [`docs/REFERENCES.md`](docs/REFERENCES.md) — verified research foundations
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — development and validation roadmap
+- [`COMMERCIAL.md`](COMMERCIAL.md) — commercial licensing and implementation options
 
 ## Installation
 
@@ -126,18 +129,20 @@ The test suite covers maturity thresholds, domain and overall calculations, rank
 - Edit score-based action rules in `lib/recommendations.ts`.
 - Edit aggregation and export behavior in `lib/scoring.ts`.
 
-Keeping methodology logic outside the UI makes the framework easier to review, fork, and extend.
+Keeping methodology logic outside the UI makes the framework easier to review, evaluate, and extend.
 
 ## Contributing
 
 Issues and pull requests are welcome. For substantive methodology changes, explain the research basis, intended use case, expected effect on interpretation, and whether migration of saved JSON is required. Run lint, tests, and a production build before submitting a pull request.
 
+Substantive contributions to methodology, scoring logic, benchmarks, commercial materials, or hosted implementations may require a separate contributor or commercial-use agreement before they are incorporated.
+
 ## Citation
 
 Until a formal publication or DOI is available, please cite the project as:
 
-> Riggs, W. (2026). *PAIR — Physical AI Readiness: Open-source assessment framework and beta tool*. GitHub repository: `williamwriggs/physical-AI-readiness`.
+> Riggs, W. (2026). *PAIR — Physical AI Readiness: Source-available assessment framework and beta tool*. GitHub repository: `williamwriggs/physical-AI-readiness`.
 
 ## License
 
-MIT License. See [`LICENSE`](LICENSE).
+Source-available for evaluation only. Commercial use requires a separate written license. See [`LICENSE`](LICENSE) and [`COMMERCIAL.md`](COMMERCIAL.md).
