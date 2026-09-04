@@ -2,13 +2,13 @@
 
 Version: **PAIR Framework v0.1**
 
-This guide defines the public naming convention for the `physical-AI-readiness` repository and related research, tools, reports, and deployments.
+This guide defines the public naming convention for the `physical-ai-readiness` repository and related research, tools, reports, and deployments.
 
 ## Core Names
 
 ### Repository
 
-`physical-AI-readiness`
+`physical-ai-readiness`
 
 Use this exact repository name when referring to the GitHub project.
 
@@ -146,7 +146,7 @@ A software interface change does not necessarily imply a methodology change. A c
 
 GitHub repository:
 
-`williamwriggs/physical-AI-readiness`
+`williamwriggs/physical-ai-readiness`
 
 Recommended Vercel slug:
 

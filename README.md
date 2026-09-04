@@ -141,7 +141,7 @@ Substantive contributions to methodology, scoring logic, benchmarks, commercial 
 
 Until a formal publication or DOI is available, please cite the project as:
 
-> Riggs, W. (2026). *PAIR — Physical AI Readiness: Source-available assessment framework and beta tool*. GitHub repository: `williamwriggs/physical-AI-readiness`.
+> Riggs, W. (2026). *PAIR — Physical AI Readiness: Source-available assessment framework and beta tool*. GitHub repository: `williamwriggs/physical-ai-readiness`.
 
 ## License
 

@@ -8,7 +8,7 @@ authors:
     alias: "Billy Riggs"
 year: 2026
 version: "0.1"
-repository-code: "https://github.com/williamwriggs/physical-AI-readiness"
+repository-code: "https://github.com/williamwriggs/physical-ai-readiness"
 license: "other"
 abstract: "A source-available exploratory framework and beta assessment tool for evaluating Physical AI readiness across Place, Architecture, Institutions, and Returns."
 keywords:
