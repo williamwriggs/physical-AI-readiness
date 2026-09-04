@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   ),
   title: "PAIR Assessment Tool | Physical AI Readiness",
   description:
-    "An open-source assessment framework for evaluating Physical AI readiness across Place, Architecture, Institutions, and Returns.",
+    "A source-available assessment framework for evaluating Physical AI readiness across Place, Architecture, Institutions, and Returns.",
   openGraph: {
     title: "PAIR Assessment Tool",
     description: "Physical AI Readiness across Place, Architecture, Institutions, and Returns.",

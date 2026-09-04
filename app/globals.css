@@ -100,6 +100,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
 .footer-inner strong { font: 620 14px/1 var(--font-geist-sans), sans-serif; }
 .footer-inner p { margin: 7px 0 0; max-width: 510px; color: #90a2b1; font-size: 12px; line-height: 1.5; }
+.footer-legal { text-align: right; }
+.footer-inner a { color: #d6e0e8; text-decoration: underline; text-underline-offset: 3px; }
 
 /* Assessment */
 .assessment-main { background: var(--wash); min-height: 100vh; }
@@ -305,6 +307,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .intro-section, .why-section, .method-section { padding: 72px 0; }
   .section-heading h2, .why-grid h2, .method-grid h2 { font-size: 34px; }
   .cta-inner, .footer-inner, .report-title-row, .report-bottom-actions { align-items: flex-start; flex-direction: column; }
+  .footer-legal { text-align: left; }
   .cta-inner .button { width: 100%; }
   .assessment-hero { padding: 42px 0; }
   .assessment-hero h1 { font-size: 37px; }
